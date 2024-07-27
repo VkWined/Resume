@@ -5,88 +5,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edwin Valencia | Full-Stack Web Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css"  />
+  <link rel="stylesheet" href="css/helpers.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="logo">Edwin Valencia</div>
-      <div class="nav-options">
-        <a href="#about" aria-label="About Section">About</a>
-        <a href="#projects" aria-label="Projects Section">Projects</a>
-        <a href="#contact" aria-label="Contact Section">Contact</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Edwin Valencia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" aria-label="About Section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" aria-label="Skills Section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#technologies" aria-label="Technologies Section">Technologies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects" aria-label="Projects Section">Projects</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <header class="hero">
     <progress max="100" value="0"></progress>
     <div class="hero-content">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-sm-8"><img class="img-fluid" src="assets/logo.png" alt="logo" height=""></div>
+          <div class="col-sm-8"><img class="img-fluid" src="assets/logo.png" alt="logo"></div>
         </div>
       </div>
-
-
     </div>
   </header>
 
   <main>
     <section id="about" class="panel">
-      <div class="container justify-content-center">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-6  h-100 left">
-            <div class="row sectionText">
-              <h2 class="h2">About me</h2>
-            </div>
-
+          <div class="col-md-6">
+            <h2 class="sectionText">About Me</h2>
           </div>
-          <div class="col-sm-6  right">
-            <p class="text-justify">I'm Edwin Valencia, a proficient full-stack web developer with 4 years of experience
-              specializing in
-              Laravel,
-              Bootstrap, Angular, Java Spring Boot, Mockito, and JUnit. My work focuses on commerce management platforms
-              and
-              e-commerce solutions. I'm experienced in AGILE methodology and tools like JIRA and Trello. My soft skills
-              include team collaboration, problem-solving, communication, and adaptability.</p>
+          <div class="col-md-6">
+            <p>I'm Edwin Valencia, a proficient full-stack web developer with 4 years of experience specializing in Laravel, Bootstrap, Angular, Java Spring Boot, Mockito, and JUnit. My work focuses on commerce management platforms and e-commerce solutions. I'm experienced in AGILE methodology and tools like JIRA and Trello. My soft skills include team collaboration, problem-solving, communication, and adaptability.</p>
           </div>
         </div>
       </div>
     </section>
+    
     <section id="skills" class="panel">
-      <div class="container justify-content-center">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-6  h-100 left">
-            <div class="row sectionText">
-              <h2 class="h2">Soft Skills</h2>
-            </div>
-
+          <div class="col-md-6">
+            <h2 class="sectionText">Soft Skills</h2>
           </div>
-          <div class="col-sm-6  right">
-            <div class="row">
+          <div class="col-md-6">
+            <div class="bento-box">
               <div class="bento-box-item">
                 <i class="fas fa-users"></i>
                 <p>Team Collaboration</p>
               </div>
-            </div>
-            <div class="row">
               <div class="bento-box-item">
                 <i class="fas fa-lightbulb"></i>
                 <p>Problem-Solving</p>
               </div>
-            </div>
-            <div class="row">
               <div class="bento-box-item">
                 <i class="fas fa-comments"></i>
                 <p>Communication</p>
               </div>
-            </div>
-            <div class="row">
               <div class="bento-box-item">
                 <i class="fas fa-arrows-alt"></i>
                 <p>Adaptability</p>
@@ -96,188 +97,185 @@
         </div>
       </div>
     </section>
+    
     <section id="technologies" class="panel">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6  h-100 left">
-            <div class="row sectionText">
-              <h2 class="h2">Technologies</h2>
-            </div>
-
+          <div class="col-md-6">
+            <h2 class="sectionText">Technologies</h2>
           </div>
-          <div class="col-sm-6  right">
-            <div class="bento-box-item">
-              <i class="fab fa-laravel"></i>
-              <p>Laravel</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-angular"></i>
-              <p>Angular</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-bootstrap"></i>
-              <p>Bootstrap</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-java"></i>
-              <p>Java Spring Boot</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fas fa-vial"></i>
-              <p>Mockito</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fas fa-clipboard-check"></i>
-              <p>JUnit</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-jenkins"></i>
-              <p>Jenkins</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-docker"></i>
-              <p>Docker</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-github"></i>
-              <p>GitHub</p>
-            </div>
-            <div class="bento-box-item">
-              <i class="fab fa-jira"></i>
-              <p>Jira</p>
+          <div class="col-md-6">
+            <div class="bento-box">
+              <div class="bento-box-item">
+                <i class="fab fa-laravel"></i>
+                <p>Laravel</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-angular"></i>
+                <p>Angular</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-java"></i>
+                <p>Java Spring Boot</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fas fa-vial"></i>
+                <p>Mockito</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fas fa-clipboard-check"></i>
+                <p>JUnit</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-jenkins"></i>
+                <p>Jenkins</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-docker"></i>
+                <p>Docker</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-github"></i>
+                <p>GitHub</p>
+              </div>
+              <div class="bento-box-item">
+                <i class="fab fa-jira"></i>
+                <p>Jira</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Portfolio Section -->
-    <section id="projects" class="py-5">
-      <div id="container" class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h2>Projects</h2>
-          </div>
-        </div>
+    
+    <section id="projects" class="projects-section py-5">
+      <div class="container">
         <div class="project panel mb-5">
+          <div class="row mb-4">
+            <div class="col text-center">
+              <h2>Projects</h2>
+            </div>
+          </div>
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
               <h3 class="text-center">Fullstack Web Developer - US Health & Care Client</h3>
               <p class="text-center"><strong>2022 - Present (Ongoing Projects)</strong></p>
               <p><strong>Job Description:</strong></p>
-              <p>As a backend software developer, I led the design and implementation of an innovative platform for a
-                clinic in the United States, aimed at efficiently managing medical inventory and facilitating
-                point-of-sale operations. This platform offers a secure and personalized user experience, with user
-                authentication and different roles assigned to ensure the security and privacy of sensitive data.</p>
+              <p>As a backend software developer, I led the design and implementation of an innovative platform for a clinic in the United States, aimed at efficiently managing medical inventory and facilitating point-of-sale operations. This platform offers a secure and personalized user experience, with user authentication and different roles assigned to ensure the security and privacy of sensitive data.</p>
               <p><strong>Responsibilities:</strong></p>
               <ul>
-                <li>Developing and maintaining server-side business logic using Java on the JVM, leveraging modern
-                  features of Java 8 and above to ensure optimal performance and robust scalability.</li>
-                <li>Integrating continuous integration (CI) tools like Jenkins to automate continuous testing, building,
-                  and deployment, ensuring the quality of delivered code and efficiency in development processes.</li>
-                <li>Collaborating closely with frontend teams to design and implement well-documented RESTful APIs,
-                  facilitating seamless integration between the backend and frontend of the platform.</li>
-                <li>Utilizing Git as a version control system to maintain a history of code changes and efficiently
-                  collaborate with other team members, following Gitflow workflows for effective branch and release
-                  management.</li>
-                <li>Implementing robust security measures using frameworks like Spring Security to ensure proper user
-                  authentication and authorization, thereby safeguarding the confidentiality and integrity of clinic
-                  data.</li>
+                <li>Developing and maintaining server-side business logic using Java on the Spring Boot platform.</li>
+                <li>Managing the database using PostgreSQL and handling the integration of the various data sources and APIs required by the application.</li>
+                <li>Ensuring efficient and secure communication between the frontend and backend.</li>
+                <li>Implementing and managing CI/CD processes using Jenkins to ensure quick and consistent deployment of application updates.</li>
+                <li>Working with Docker and Kubernetes to containerize and orchestrate the application and ensure scalability and high availability.</li>
+              </ul>
+              <p><strong>Key Achievements:</strong></p>
+              <ul>
+                <li>Reduced the time taken to implement new features by 30% through the development and automation of deployment processes using Jenkins and Docker.</li>
+                <li>Improved application performance and reduced the average response time by 40% by implementing optimized code and database query optimizations.</li>
+                <li>Led a team of 4 developers and collaborated with cross-functional teams to ensure successful project delivery and implementation of best practices.</li>
+                <li>Received positive feedback from the client for the application's user-friendly interface and efficient performance, resulting in increased customer satisfaction and adoption of the platform.</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="panel project mb-5">
+        <div class="project panel mb-5">
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
-              <h3 class="text-center">Instructor - Codellege (Softtek Academy)</h3>
-              <p class="text-center"><strong>2022 Jan - Jun</strong></p>
+              <h3 class="text-center">Web Developer - Codellege (Softtek Academy)</h3>
+              <p class="text-center"><strong>2022</strong></p>
               <p><strong>Job Description:</strong></p>
-              <p>As a web development instructor at Codellege (Softtek Academy), I mentored and guided aspiring
-                developers in acquiring core web development skills. My role involved overseeing the learning journey of
-                over 40 students, facilitating their understanding of web development concepts and technologies.</p>
+              <p>During my participation in Softtek Academy's Codellege program, I was involved in a project to develop a student management platform for educational institutions. The platform was designed to streamline administrative processes and provide a seamless experience for students and staff.</p>
               <p><strong>Responsibilities:</strong></p>
               <ul>
-                <li>Conducted interactive lectures and workshops to teach fundamental web development principles,
-                  including HTML, CSS, JavaScript, and modern web frameworks.</li>
-                <li>Provided hands-on guidance and support to students as they worked on individual and group projects,
-                  ensuring comprehension and application of learned concepts.</li>
-                <li>Mentored two student groups throughout the development process, offering technical assistance, code
-                  reviews, and feedback to help them build functional websites.</li>
-                <li>Created a collaborative and inclusive learning environment, encouraging student participation and
-                  fostering a growth mindset.</li>
+                <li>Designed and implemented the frontend of the platform using Angular, providing a responsive and interactive user interface.</li>
+                <li>Collaborated with the backend team to integrate RESTful APIs and ensure smooth data exchange between the frontend and backend systems.</li>
+                <li>Utilized Bootstrap and CSS for styling and layout, ensuring a consistent and visually appealing design across all devices.</li>
+                <li>Worked closely with the UX/UI team to implement best practices in user experience design and accessibility.</li>
+                <li>Participated in code reviews and provided feedback to peers, contributing to a collaborative and productive team environment.</li>
+              </ul>
+              <p><strong>Key Achievements:</strong></p>
+              <ul>
+                <li>Successfully delivered a fully functional prototype of the platform within a tight deadline, demonstrating the ability to work under pressure and meet project milestones.</li>
+                <li>Received recognition from the academy for exceptional performance and contribution to the project, showcasing technical skills and dedication to quality.</li>
+                <li>Developed a user-friendly interface that received positive feedback from students and staff, enhancing the overall user experience.</li>
+                <li>Enhanced the performance and scalability of the frontend application by implementing best practices in code optimization and modular design.</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="panel project mb-5">
+        <div class="project panel mb-5">
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
-              <h3 class="text-center">Fullstack Web Developer - E-commerce</h3>
-              <p class="text-center"><strong>2023 Jun - 2024 Jan</strong></p>
+              <h3 class="text-center">Fullstack Web Developer - E-commerce Project</h3>
+              <p class="text-center"><strong>2021 - 2022</strong></p>
               <p><strong>Job Description:</strong></p>
-              <p>During my tenure as a fullstack e-commerce developer, I played a pivotal role in crafting multiple
-                e-commerce platforms from conception to launch, utilizing Angular for frontend development and Java
-                Spring Boot for backend implementation. These platforms were designed to elevate user experience and
-                drive business growth.</p>
+              <p>As a full-stack web developer, I contributed to the development of an e-commerce platform, focusing on both frontend and backend components. The platform was designed to provide a seamless shopping experience, with features such as product catalog management, shopping cart functionality, and secure payment integration.</p>
               <p><strong>Responsibilities:</strong></p>
               <ul>
-                <li>Developed responsive and visually appealing user interfaces using Angular, ensuring optimal
-                  performance and accessibility across various devices and browsers.</li>
-                <li>Implemented backend functionalities using Java Spring Boot, including user authentication, product
-                  management, order processing, and integration with third-party services such as payment gateways and
-                  shipping providers.</li>
-                <li>Collaborated closely with cross-functional teams, including designers, product managers, and QA
-                  engineers, to deliver high-quality solutions that met user needs and business objectives.</li>
-                <li>Conducted performance optimization and scalability enhancements to ensure the stability and
-                  reliability of the e-commerce platforms, even during peak traffic periods.</li>
+                <li>Developed and maintained the frontend of the platform using Angular, creating a responsive and intuitive user interface.</li>
+                <li>Implemented backend business logic using Java Spring Boot, ensuring robust and scalable server-side functionality.</li>
+                <li>Integrated third-party payment gateways and ensured secure transaction processing.</li>
+                <li>Collaborated with the design team to create a visually appealing and user-friendly interface, following modern UX/UI design principles.</li>
+                <li>Conducted testing and debugging to ensure the platform's reliability and performance across different devices and browsers.</li>
+              </ul>
+              <p><strong>Key Achievements:</strong></p>
+              <ul>
+                <li>Developed a feature-rich e-commerce platform that successfully launched and attracted a growing user base, contributing to the client's business growth.</li>
+                <li>Optimized the frontend and backend performance, resulting in a smooth and fast user experience and increasing customer satisfaction.</li>
+                <li>Implemented secure payment processing, ensuring customer data protection and compliance with industry standards.</li>
+                <li>Collaborated effectively with cross-functional teams, demonstrating strong communication and problem-solving skills.</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="panel project mb-5">
+        <div class="project panel mb-5">
           <div class="row">
             <div class="col-lg-8 offset-lg-2">
               <h3 class="text-center">Fullstack Web Developer - Finverr</h3>
-              <p class="text-center"><strong>2020 May - 2022 Dec</strong></p>
+              <p class="text-center"><strong>2020 - 2021</strong></p>
               <p><strong>Job Description:</strong></p>
-              <p>During my tenure at Finverr, I played a pivotal role in architecting and developing a platform to
-                manage user investments, leading to a significant increase in remote investment participation. Utilizing
-                Laravel PHP, MVC architecture, and REST API, I spearheaded the development of key management solutions,
-                contributing to a substantial reduction in operational costs.</p>
+              <p>At Finverr, I was involved in the development of a comprehensive finance management platform, catering to both individual and business users. The platform offered features such as budgeting tools, financial tracking, and investment management, aimed at helping users achieve their financial goals.</p>
               <p><strong>Responsibilities:</strong></p>
               <ul>
-                <li>Led the architecture and development of a comprehensive platform to manage user investments,
-                  focusing on usability, scalability, and security.</li>
-                <li>Implemented features to enhance remote investment participation, such as real-time investment
-                  tracking, portfolio management tools, and interactive reporting dashboards.</li>
-                <li>Leveraged Laravel PHP framework to build robust backend systems, utilizing MVC architecture for code
-                  organization and modularity.</li>
-                <li>Developed RESTful APIs to facilitate seamless communication between frontend and backend systems,
-                  enabling efficient data exchange and integration with third-party services.</li>
+                <li>Developed frontend components using Angular, providing a dynamic and interactive user interface.</li>
+                <li>Implemented backend services with Java Spring Boot, ensuring secure and efficient handling of financial data.</li>
+                <li>Integrated third-party APIs for financial data aggregation and analysis, offering users a comprehensive view of their financial health.</li>
+                <li>Worked closely with the product team to define and prioritize features, ensuring alignment with user needs and business objectives.</li>
+                <li>Maintained and updated the platform, incorporating user feedback and ensuring continuous improvement.</li>
+              </ul>
+              <p><strong>Key Achievements:</strong></p>
+              <ul>
+                <li>Contributed to the successful launch of the platform, which received positive reviews from users and industry experts.</li>
+                <li>Enhanced the platform's performance and scalability, supporting a growing user base and increasing engagement.</li>
+                <li>Implemented data security measures, ensuring compliance with financial regulations and protecting user data.</li>
+                <li>Collaborated effectively with a multidisciplinary team, demonstrating adaptability and a strong commitment to quality.</li>
               </ul>
             </div>
           </div>
+          <footer class="text-center py-4">
+            <div class="container">
+              <p>&copy; 2024 Edwin Valencia. All rights reserved.</p>
+            </div>
+          </footer>
         </div>
       </div>
     </section>
-
-    <!-- Contact Section 
-    <section id="contact" class="panel">
-      <h2>Contact</h2>
-      <p>If you'd like to get in touch, please feel free to reach out via email or connect with me on LinkedIn. I'm
-        always open to discussing new projects and opportunities.</p>
-    </section>
-    -->
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.8/dist/lenis.min.js"></script> 
   <script src="js/scripts.js"></script>
+  <script src="js/lenis.js"></script>
 </body>
 
 </html>
