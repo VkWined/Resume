@@ -7,10 +7,14 @@ sections.forEach((section) => {
     start: "center 30%",
     pin: true,
     pinSpacing: false,
-    markers: {startColor: "white", endColor: "white", fontSize: "18px", fontWeight: "bold", indent: 20}
   })
 });
 
+//TODO: Remove panel class from projects and give them a new layout to prevent them from using more than 100 vh
+//      Also add the horizontal scroll effect
+
+//TODO: Add more effects to the Website, Some kind of parallax. Soft skills and Technologies must have some kind of effect each,
+//      It would be nice to present them in a different way, Maybe like a roulette, carousel or a cool effect like that.
 
 let bentoBoxes = gsap.utils.toArray(".bento-box-item");
 bentoBoxes.forEach((box) => {
