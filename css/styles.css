@@ -1,0 +1,182 @@
+:root {
+  --bs-primary: #586D92; /* Primary Color */
+  --bs-secondary: #D5E3E6; /* Secondary Color */
+  --bs-neutral-light: #F0E2D2; /* Neutral Light Color */
+  --bs-neutral-dark: #EFEFE5; /* Neutral Dark Color */
+  --bs-accent: #D18266; /* Accent Color */
+  --bs-text: #364042; /* Text Color */
+}
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.cactus-classical-serif-regular {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, var(--bs-neutral-light) 0%, var(--bs-neutral-dark) 100%);
+}
+
+header.hero {
+  height: 100vh;
+  background: url('../assets/layered-waves-test.svg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--bs-neutral-dark);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+}
+
+.navbar .nav-options a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero-content h1,
+.hero-content p {
+  text-align: center;
+  margin: 0;
+  font-family: "Cactus Classical Serif", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: 400;
+}
+
+.panel {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, var(--bs-neutral-dark) 0%, var(--bs-neutral-light) 100%);
+  border-bottom: 1px solid #ddd;
+}
+
+.bento-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.bento-box-item {
+  width: 40%;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: var(--bs-neutral-dark);
+}
+
+.bento-box-item i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--bs-accent);
+}
+
+h2,
+p {
+  color: var(--bs-text);
+}
+
+/* Applying new gradient background */
+.panel:nth-child(odd) {
+  background: linear-gradient(135deg, var(--bs-neutral-dark) 0%, var(--bs-neutral-light) 100%);
+}
+
+.panel:nth-child(even) {
+  background: linear-gradient(135deg, var(--bs-neutral-light) 0%, var(--bs-neutral-dark) 100%);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border: none;
+  background: transparent;
+  z-index: 2000;
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: #586D92;
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: #586D92;
+  background-attachment: fixed;
+}
+
+/*
+#container {
+  display: flex;
+  width: max-content;  Ensures the container fits all child elements 
+}
+
+.project {
+  flex: 0 0 100vw;  Ensure each project takes up the full viewport width 
+  min-width: 100vw;  Matches flex basis 
+  box-sizing: border-box;  Includes padding and border in width 
+}
+.projects-container {
+  display: flex;
+  overflow-x: hidden;  Hide the horizontal scrollbar 
+}
+
+*/
