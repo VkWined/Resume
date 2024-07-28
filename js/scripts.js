@@ -1,16 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
 let sections =gsap.utils.toArray(".panel");
-sections.forEach((section) => {
+sections.forEach((section, i) => {
   ScrollTrigger.create({
     trigger: section,
-    start: "center 30%",
-    pin: true,
-    pinSpacing: false,
+    start: "40% 30%",
+    pin: true, 
+    pinSpacing: i === sections.length -1 ? true : false ,
+
   })
 });
 
-//TODO: Remove panel class from projects and give them a new layout to prevent them from using more than 100 vh
+//TODO: give projects a new layout to prevent them from using more than 100 vh
 //      Also add the horizontal scroll effect
 
 //TODO: Add more effects to the Website, Some kind of parallax. Soft skills and Technologies must have some kind of effect each,
@@ -27,6 +28,7 @@ bentoBoxes.forEach((box) => {
         start: "top 90%",
         end: "bottom 90%",
         scrub: 1,
+        markers:true,
       }
     }
   );

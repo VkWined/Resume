@@ -57,6 +57,11 @@ header.hero {
   border-radius: 8px;
   background: var(--bs-neutral-dark);
 }
+@media (max-width: 995px) {
+  .bento-box-item {
+    width: 100%;
+  }
+}
 
 .bento-box-item i {
   font-size: 40px;
