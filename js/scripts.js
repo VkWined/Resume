@@ -7,7 +7,7 @@ sections.forEach((section, i) => {
     start: "40% 30%",
     pin: true, 
     pinSpacing: i === sections.length -1 ? true : false ,
-
+    end: i === sections.length -1 ? "+=200" : "",
   })
 });
 
